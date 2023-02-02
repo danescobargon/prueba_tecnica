@@ -7,8 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    Este es el texto que se me ocurrio
-    <button>boton 1</button>
-    <button>boton 2</button>
+    <p id="texto">
+        Este es el texto que se me ocurrio
+    </p>
+    
+    <button onclick="cambiar()">cambiar</button>
+    <button onclick="restablecer()">restablecer</button>
+
+
+    <script>
+        function cambiar() {
+            let texto = document.getElementById("texto")
+            texto.style.fontSize = "18px"
+            texto.style.color = "red"
+            texto.style.fontWeight = "bold"
+        }
+        function restablecer() {
+            let texto = document.getElementById("texto")
+            
+        }
+    </script>
 </body>
 </html>
